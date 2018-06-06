@@ -9,14 +9,21 @@
 	<title>Home - FitA</title>
 </head>
 <?php include_once('includes/header.php'); ?>
+
 <body>
 <div class="container">
+<div class="alert alert-warning" role="alert"><b>Warning !</b> The website is still under construction, and also available on <a href="https://github.com/rudreais/fita-website">GitHub</a>.</div>
 	<div class="page-header">
   		<h1>Fed in the Abyss <small>What is it about</small></h1>
 	</div>
 	<div class="page-header">
   		<h1>Installation <small>Building and running</small></h1>
 	</div>
+	<p>For Ubuntu, Debian and Fedora</p>
+	<pre><code class="bash">$ premake5 gmake
+$ cd build/
+$ make
+$ ./bin/Release/roguelike</code></pre>
 	<div class="page-header">
   		<h1>Usage <small>How to play</small></h1>
 	</div>
@@ -30,5 +37,7 @@
   		<h1>Credits</h1>
 	</div>
 </div>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 </body>
 </html>
