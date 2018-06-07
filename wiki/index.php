@@ -15,23 +15,33 @@
 <div class="page-header">
   <h1>Todolist <small>wiki content</small></h1>
 </div>
-<ul class="list-group">
-    <li class="list-group-item">
-        races        
+<ol>
+    <li>races
+        <ol>
+            <li>humans</li>
+            <li>barbarians</li>
+            <li>elves
+                <ol>
+                    <li>high-elves</li>
+                    <li>high-elves</li>
+                    <li>high-elves</li>
+                    <li>high-elves</li>
+                </ol>
+            </li>
+            <li>zombies</li>
+            <li>dragons</li>
+        </ol>
     </li>
-    <li class="list-group-item">
-        classes
+    <li>classes
+        <ol>
+            <li>warriors</li>
+            <li>warriors</li>
+            <li>warriors</li>
+            <li>warriors</li>
+            <li>warriors</li>
+        </ol>
     </li>
-    <li class="list-group-item">
-        weapons
-    </li>
-    <li class="list-group-item">
-        armors
-    </li>
-    <li class="list-group-item">
-        spells
-    </li>
-</ul>
+</ol>
 </div>
 </body>
 </html>
