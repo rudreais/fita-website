@@ -46,7 +46,7 @@ foreach ($output as $line) {
 foreach ($history as $commit) {
 ?>
 <div class="panel panel-default">
-  <div class="panel-heading"><?php print date('m/d/Y', $commit["date"])." from ".$commit["author"]."<br>"; ?></div>
+  <div class="panel-heading"><?php print date('m/d/Y H:m:s', $commit["date"])." - from : ".$commit["author"]."<br>"; ?></div>
   <div class="panel-body">
     <?php
 		print $commit["subject"]."";
