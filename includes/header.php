@@ -12,11 +12,13 @@
   </div>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/commits.php">Commits</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/commits.php">Commits</a></li>
+      <li><a href="/wiki/code.php">Technical documentation</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="/wiki/">Wiki</a></li>
+      <li><a href="/test.html">test page</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
     </ul>
   </div>
 </nav>

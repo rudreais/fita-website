@@ -24,3 +24,6 @@ li ol > li {
 li ol > li:before {
 	content: counters(item, ".") " ";
 }
+li ul {
+	margin-left: 15px;
+}
