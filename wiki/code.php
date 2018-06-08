@@ -25,18 +25,34 @@
 			<li><a href="#struct_floor">floor_t</a></li>
 		</ul>
 	</li>
+	<li><a href="#enum">Enumerations</a>
+		<ul>
+			<li><a href="#enum_item_type">item_type</a></li>
+		</ul>
+	</li>
 </ol>
 
 <div id="struct">
+<h3>Structures</h3>
 <h4 id="struct_inventory"><code>inventory_t</code></h4>
 <ul>
 <pre>
-<li>int **items</li>
+<li>int **type</li>
 </pre>
 </ul>
 <hr>
 
 <h4 id="struct_charac"><code>charac_t</code></h4>
+<p>
+<ul>
+	<li><code>str</code> : value between 0 and 100 representating <b>strength</b>.</li>
+	<li><code>intel</code> : value between 0 and 100 representating <b>intelligence</b>.</li>
+	<li><code>wis</code> : value between 0 and 100 representating <b>wisdom</b>.</li>
+	<li><code>dex</code> : value between 0 and 100 representating <b>dexterity</b>.</li>
+	<li><code>con</code> : value between 0 and 100 representating <b>consistence</b>.</li>
+	<li><code>chr</code> : value between 0 and 100 representating <b>charisma</b>.</li>
+</ul>
+</p>
 <ul>
 <pre>
 <li>int str</li>
@@ -63,9 +79,9 @@
 <pre>
 <li>char appear</li>
 <li>bool live</li>
-<li>charac_t *charac</li>
-<li>inventory_t *inv</li>
-<li>inventory_t *chest</li>
+<li><a href="#struct_charac">charac_t</a> *charac</li>
+<li><a href="#struct_inventory">inventory_t</a> *inv</li>
+<li><a href="#struct_inventory">inventory_t</a> *chest</li>
 </pre>
 </ul>
 <hr>
@@ -73,13 +89,32 @@
 <h4 id="struct_floor"><code>floor_t</code></h4>
 <ul>
 <pre>
-<li>entity_t *entities</li>
-<li>map_t *map</li>
+<li><a href="#struct_entity">entity_t</a> *entities</li>
+<li><a href ="#struct_map">map_t</a> *map</li>
 </pre>	
+</ul>
+<hr>
+
+</div>
+
+<div id="enum">
+<h3>Enumerations</h3>
+<h4 id="enum_item_type"><code>item_type</code></h4>
+<ul>
+<pre>
+<li>void = 0</li>
+<li>boot</li>
+<li>pants</li>
+<li>armlet</li>
+<li>armor</li>
+<li>helmet</li>
+<li>cloak</li>
+</pre>
 </ul>
 
 </div>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 </body>
 <style>
