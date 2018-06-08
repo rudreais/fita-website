@@ -13,39 +13,52 @@
 <body>
 <div class="container">
 <div class="page-header">
-  <h1>Documentation <small>What structures are done and their connections</small></h1>
+  <h1>Technical documentation</h1>
 </div>
-<h3>See as a list:</h3>
+<h2>Table of contents</h2>
 <ol>
-	<li>floor
-		<ol>
-			<li>entities
-				<ol>
-					<li>(entity * n) + player</li>
-				</ol>
-			</li>
-			<li>map
-				<ol>
-					<li>design</li>
-					<li>size</li>
-					<li>pos</li>
-				</ol>
-			</li>
-		</ol>
+	<li><a href="#struct">Structures</a>
+		<ul>
+			<li><a href="#struct_inventory">inventory_t</a></li>
+			<li><a href="#struct_charac">charac_t</a></li>
+			<li><a href="#struct_entity">entity_t</a></li>
+			<li><a href="#struct_floor">floor_t</a></li>
+		</ul>
 	</li>
 </ol>
-<hr>
-<h3>See as code:</h3>
-<p><i>FitA</i> contains a lot of structures. Here are all of them explained</p>
-<h4><code>floor_t</code></h4>
+
+<div id="struct">
+<h4 id="struct_inventory"><code>inventory_t</code></h4>
 <ul>
 <pre>
-<li>entity_t *entities</li>
-<li>map_t *map</li>
-</pre>	
+<li>int **items</li>
+</pre>
 </ul>
+<hr>
 
-<h4><code>entity_t</code></h4>
+<h4 id="struct_charac"><code>charac_t</code></h4>
+<ul>
+<pre>
+<li>int str</li>
+<li>int intel</li>
+<li>int wis</li>
+<li>int dex</li>
+<li>int con</li>
+<li>int chr</li>
+</pre>
+</ul>
+<hr>
+
+<h4 id="struct_entity"><code>entity_t</code></h4>
+<p>
+<ul>
+	<li><code>appear</code> : character meant to represent the entity. as for example, the player will appear with '@' on the screen.</li>
+	<li><code>live</code> : boolean set to true if the entity is a living one or not, as for chests and enemies.</li>
+	<li><code>charac</code> : structure pointer to characteristics of the enemies/player if live is set on <b>true</b>.</li>
+	<li><code>inv</code> : structure pointer to the inventory of the enemies/player if live is set on <b>true</b>.</li>
+	<li><code>chest</code> : structure pointer to the inventory of the chest if live is set on <b>false</b>.</li>
+</ul>
+</p>
 <ul>
 <pre>
 <li>char appear</li>
@@ -55,19 +68,18 @@
 <li>inventory_t *chest</li>
 </pre>
 </ul>
-
 <hr>
-<h3>See as UML:</h3>
-<pre><code class="uml">floor [
-	entities [
-		(entity * n) + player
-	],
-	map [
-		design,
-		size,
-		pos
-	]
-]</code></pre>
+
+<h4 id="struct_floor"><code>floor_t</code></h4>
+<ul>
+<pre>
+<li>entity_t *entities</li>
+<li>map_t *map</li>
+</pre>	
+</ul>
+
+</div>
+
 </div>
 </body>
 <style>
