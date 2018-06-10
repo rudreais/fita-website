@@ -9,10 +9,10 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>    
+    <a class="navbar-brand" href="/"></a>
   </div>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li><a href="/">Home</a></li>
       <li><a href="/commits.php">Commits</a></li>
       <li><a href="/wiki/code.php">Technical documentation</a></li>
     </ul>

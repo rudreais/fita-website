@@ -27,3 +27,10 @@ li ol > li:before {
 li ul {
 	margin-left: 15px;
 }
+.navbar-brand {
+    position: relative;
+    background: url(/img/icone.png) no-repeat scroll center center / contain;
+    left: 15px;
+    margin-right: 15px;
+    background-size: contain;
+}
